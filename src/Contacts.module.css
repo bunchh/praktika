@@ -1,0 +1,123 @@
+.contactss {
+  padding: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.container1 {
+  width: 100%;
+  max-width: 800px;
+}
+
+.contactpanel {
+  background: linear-gradient(10deg, rgba(5, 15, 30, 0.7), #484848b9);
+  border: 1px solid #9B9B9B;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(100, 200, 255, 0.2);
+}
+
+.contactheader {
+  background: linear-gradient(10deg, rgba(5, 15, 30, 0.7), #484848b9);
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #9B9B9B;
+}
+
+.contactheader h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: #E4E4E4;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contactbody {
+  padding: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.contactform {
+  display: grid;
+  gap: 24px;
+}
+
+.formrow {
+  display: grid;
+  grid-template-columns: 350px 350px;
+  gap: 24px;
+}
+
+.formgroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputprefix,
+.inputLabel {
+  color: #E4E4E4;
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 8px;
+}
+
+.formInput,
+.formTextarea {
+  background: #0a192f;
+  border: 1px solid #9B9B9B;
+  color: #E4E4E4;
+  padding: 12px;
+  border-radius: 4px;
+  width: 100%;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.formTextarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.formActions {
+  margin-top: 16px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 250px;
+  border-radius: 4px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.submitbtn {
+  background-color: #CFCFCF;
+  color: #000;
+}
+
+.statusmessage {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 13px;
+  color: #48c048;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .formrow {
+    grid-template-columns: 225px;
+  }
+}

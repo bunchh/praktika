@@ -1,0 +1,169 @@
+.pricesection {
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.calculator {
+  background: linear-gradient(10deg, rgba(5, 15, 30, 0.7), #484848b9);
+  border: 1px solid #9B9B9B;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 0 30px rgba(100, 200, 255, 0.2);
+  margin-bottom: 48px;
+  position: relative;
+  overflow: hidden;
+}
+
+.calculator h2,
+.tarifftable h3 {
+  display: flex;
+  justify-content: center;
+  color: #E4E4E4;
+}
+
+.calculator::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(155, 155, 155, 0.05), transparent);
+  pointer-events: none;
+}
+
+.dividerline {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #7D7D7D, transparent);
+  margin: 24px 0;
+}
+
+.calcform {
+  display: grid;
+  gap: 24px;
+}
+
+.inputgroup {
+  margin-bottom: 24px;
+}
+
+.rangeslider {
+  width: 100%;
+  height: 8px;
+  background: #0a192f;
+  border: 1px solid #9B9B9B;
+  border-radius: 4px;
+  margin: 16px 0;
+}
+
+.rangeslider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #E4E4E4;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 10px #9B9B9B;
+}
+
+.slidervalue {
+  color: #E4E4E4;
+  font-family: 'Orbitron', sans-serif;
+  text-align: right;
+  font-size: 19px;
+}
+
+.formselect {
+  background-color: #0a192f;
+  border: 1px solid #9B9B9B;
+  color: #E4E4E4;
+  padding: 12px;
+  width: 100%;
+  border-radius: 4px;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.optionslist {
+  display: grid;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.optionslist label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  color: #E4E4E4;
+}
+
+.optionslist input {
+  width: auto;
+  margin: 0;
+  accent-color: #CFCFCF;
+}
+
+.resultblock {
+  background: linear-gradient(10deg, rgba(5, 15, 30, 0.7), #484848b9);
+  border: 1px solid #9B9B9B;
+  padding: 32px;
+  margin-top: 32px;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.priceresult {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 48px;
+  color: #E4E4E4;
+  margin: 48px 0;
+  text-shadow: 0 0 10px rgba(228, 228, 228, 0.5);
+}
+
+.currencytext {
+  color: #BCBCBC;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.tarifftable {
+  background: linear-gradient(10deg, rgba(5, 15, 30, 0.7), #484848b9);
+  border: 1px solid #9B9B9B;
+  padding: 32px;
+  border-radius: 5px;
+}
+
+.pricetable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 24px;
+}
+
+.pricetable th,
+.pricetable td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid rgba(155, 155, 155, 0.2);
+}
+
+.pricetable th {
+  color: #E4E4E4;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.pricetable td {
+  color: #E4E4E4;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.pricetable tr:hover td {
+  background: rgba(155, 155, 155, 0.05);
+  color: #E4E4E4;
+}
